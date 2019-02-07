@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "nodemon ./app/server/",
-    "watch": "webpack --watch --mode=development"
+    "watch": "webpack --watch --mode=development",
+    "lint":  "eslint ."
   },
   "repository": {
     "type": "git",

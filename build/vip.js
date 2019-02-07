@@ -97,6 +97,39 @@ eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.
 
 /***/ }),
 
+/***/ "./app/shared/components/commons/layout.js":
+/*!*************************************************!*\
+  !*** ./app/shared/components/commons/layout.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar SvgSearch = __webpack_require__(/*! ./svg-search */ \"./app/shared/components/commons/svg-search.js\");\n\n__webpack_require__(/*! ./layout.scss */ \"./app/shared/components/commons/layout.scss\");\n\nvar Layout =\n/*#__PURE__*/\nfunction (_React$Component) {\n  _inherits(Layout, _React$Component);\n\n  function Layout() {\n    var _this;\n\n    _classCallCheck(this, Layout);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(Layout).call(this));\n    _this.state = {\n      searchTerm: ''\n    };\n    return _this;\n  }\n\n  _createClass(Layout, [{\n    key: \"handleSearchTermChange\",\n    value: function handleSearchTermChange(event) {\n      this.setState({\n        searchTerm: event.target.value\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", null, React.createElement(\"header\", {\n        className: \"nav-header\"\n      }, React.createElement(\"div\", {\n        className: \"nav-bounds\"\n      }, React.createElement(\"a\", {\n        className: \"nav-logo\",\n        href: \"#\",\n        tabindex: \"1\"\n      }, \"Mercado Libre Argentina - Donde comprar y vender de todo\"), React.createElement(\"form\", {\n        className: \"nav-search\",\n        action: \"/items\",\n        method: \"get\"\n      }, React.createElement(\"input\", {\n        onChange: this.handleSearchTermChange.bind(this),\n        className: \"search-bar\",\n        placeholder: \"Buscar productos, marcas y m\\xE1s...\"\n      }), React.createElement(\"input\", {\n        type: \"hidden\",\n        value: this.state.searchTerm,\n        name: \"search\"\n      }), React.createElement(\"button\", {\n        className: \"search-button\",\n        type: \"submit\"\n      }, React.createElement(\"i\", {\n        className: \"search-button-icon\"\n      }, React.createElement(SvgSearch, null)))))));\n    }\n  }]);\n\n  return Layout;\n}(React.Component);\n\nmodule.exports = Layout;\n\n//# sourceURL=webpack:///./app/shared/components/commons/layout.js?");
+
+/***/ }),
+
+/***/ "./app/shared/components/commons/layout.scss":
+/*!***************************************************!*\
+  !*** ./app/shared/components/commons/layout.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./app/shared/components/commons/layout.scss?");
+
+/***/ }),
+
+/***/ "./app/shared/components/commons/svg-search.js":
+/*!*****************************************************!*\
+  !*** ./app/shared/components/commons/svg-search.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar SvgSearch = function SvgSearch() {\n  return React.createElement(\"svg\", {\n    version: \"1.1\",\n    xmlns: \"http://www.w3.org/2000/svg\",\n    viewBox: \"0 0 512 512\",\n    enableBackground: \"new 0 0 512 512\",\n    width: \"16\",\n    height: \"16\"\n  }, React.createElement(\"g\", null, React.createElement(\"path\", {\n    d: \"M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z\"\n  })));\n};\n\nmodule.exports = SvgSearch;\n\n//# sourceURL=webpack:///./app/shared/components/commons/svg-search.js?");
+
+/***/ }),
+
 /***/ "./app/shared/components/helpers/script.js":
 /*!*************************************************!*\
   !*** ./app/shared/components/helpers/script.js ***!
@@ -108,6 +141,17 @@ eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.
 
 /***/ }),
 
+/***/ "./app/shared/components/pages/svg-chevron.js":
+/*!****************************************************!*\
+  !*** ./app/shared/components/pages/svg-chevron.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar SvgChevron = function SvgChevron() {\n  return React.createElement(\"span\", {\n    className: \"breadcrumb-icon\"\n  }, React.createElement(\"svg\", {\n    width: \"15\",\n    height: \"15\",\n    viewBox: \"0 0 18 18\",\n    xmlns: \"http://www.w3.org/2000/svg\",\n    class: \"ui-icon ui-icon--chevron-right\"\n  }, React.createElement(\"g\", {\n    fill: \"#666\",\n    \"fill-rule\": \"evenodd\"\n  }, React.createElement(\"path\", {\n    d: \"M6.646 5.354l4 4 .354.353.707-.707-.353-.354-4-4L7 4.293 6.293 5z\"\n  }), React.createElement(\"path\", {\n    d: \"M7.354 13.354l4-4L11.707 9 11 8.293l-.354.353-4 4-.353.354.707.707z\"\n  }))));\n};\n\nmodule.exports = SvgChevron;\n\n//# sourceURL=webpack:///./app/shared/components/pages/svg-chevron.js?");
+
+/***/ }),
+
 /***/ "./app/shared/components/pages/vip.js":
 /*!********************************************!*\
   !*** ./app/shared/components/pages/vip.js ***!
@@ -115,7 +159,18 @@ eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar serialize = __webpack_require__(/*! serialize-javascript */ \"./node_modules/serialize-javascript/index.js\");\n\nvar Script = __webpack_require__(/*! ../helpers/script */ \"./app/shared/components/helpers/script.js\");\n\nvar Vip = function Vip(props) {\n  //const { itemData, children } = props;\n  var itemData = props.itemData;\n  var children = props.children;\n  var serializeProps = {\n    itemData: props.itemData\n  };\n  var item = props.itemData.item;\n  console.log(props);\n  return React.createElement(\"div\", null, React.createElement(Script, null, \"window.ML_PRELOADED_STATE = \".concat(serialize(serializeProps, {\n    isJSON: true\n  }), \";\")), item && React.createElement(\"div\", null, React.createElement(\"h2\", null, item.title), React.createElement(\"img\", {\n    src: item.picture\n  }), React.createElement(\"p\", null, item.price.amount, React.createElement(\"sup\", null, item.price.decimals))));\n};\n\nmodule.exports = Vip;\n\n//# sourceURL=webpack:///./app/shared/components/pages/vip.js?");
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar serialize = __webpack_require__(/*! serialize-javascript */ \"./node_modules/serialize-javascript/index.js\");\n\nvar Script = __webpack_require__(/*! ../helpers/script */ \"./app/shared/components/helpers/script.js\");\n\nvar Layout = __webpack_require__(/*! ../commons/layout */ \"./app/shared/components/commons/layout.js\");\n\nvar SvgChevron = __webpack_require__(/*! ./svg-chevron */ \"./app/shared/components/pages/svg-chevron.js\");\n\n__webpack_require__(/*! ./vip.scss */ \"./app/shared/components/pages/vip.scss\");\n\nvar Vip = function Vip(props) {\n  //const { itemData, children } = props;\n  // const itemData = props.itemData\n  // const children = props.children\n  var serializeProps = {\n    itemData: props.itemData\n  };\n  var item = props.itemData.item;\n  console.log(props);\n  return React.createElement(\"div\", null, React.createElement(Script, null, \"window.ML_PRELOADED_STATE = \".concat(serialize(serializeProps, {\n    isJSON: true\n  }), \";\")), React.createElement(Layout, null), item && React.createElement(\"div\", {\n    className: \"vip-container\"\n  }, React.createElement(\"ul\", {\n    class: \"breadcrumb\"\n  }, item.breadcrumb.map(function (cat) {\n    return React.createElement(\"li\", null, cat.name, \" \", React.createElement(SvgChevron, null), \" \");\n  })), React.createElement(\"div\", {\n    className: \"vip-container-inner\"\n  }, React.createElement(\"div\", {\n    className: \"vip-col-left\"\n  }, React.createElement(\"div\", {\n    className: \"vip-image\"\n  }, React.createElement(\"img\", {\n    src: item.picture\n  })), React.createElement(\"div\", {\n    className: \"vip-description\"\n  }, React.createElement(\"h2\", {\n    class: \"vip-description__title\"\n  }, \"Descripci\\xF3n\"), item.description)), React.createElement(\"div\", {\n    className: \"vip-col-right\"\n  }, React.createElement(\"p\", {\n    class: \"vip-item-condition\"\n  }, item.condition === 'new' ? 'Nuevo' : 'Usado', \" - \", item.sold_quantity, \" vendidos\"), React.createElement(\"h2\", {\n    className: \"vip-item-title\"\n  }, item.title), React.createElement(\"div\", {\n    class: \"price\"\n  }, React.createElement(\"span\", null, item.price.currency), React.createElement(\"span\", null, item.price.amount), item.price.decimals > 0 && React.createElement(\"sup\", null, item.price.decimals))))));\n};\n\nmodule.exports = Vip;\n\n//# sourceURL=webpack:///./app/shared/components/pages/vip.js?");
+
+/***/ }),
+
+/***/ "./app/shared/components/pages/vip.scss":
+/*!**********************************************!*\
+  !*** ./app/shared/components/pages/vip.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./app/shared/components/pages/vip.scss?");
 
 /***/ }),
 

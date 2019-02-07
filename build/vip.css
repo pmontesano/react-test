@@ -134,87 +134,53 @@ body {
 .item-price_symbol {
   margin-right: 5px; }
 
-.search-container {
-  display: flex;
+.vip-container {
   box-sizing: border-box;
   max-width: 1200px;
-  margin: 40px auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  margin: 40px auto; }
 
-.filters {
+.vip-container-inner {
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box; }
+
+.vip-col-left {
   flex-grow: 1;
   flex-wrap: wrap;
-  max-width: 300px;
-  min-width: 210px; }
+  min-width: 740px;
+  max-width: 740px;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box; }
 
-.search-list-container {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
+.vip-col-right {
   flex-grow: 2;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 900px;
-  padding-top: 12px; }
+  min-width: 460px;
+  padding: 40px;
+  box-sizing: border-box; }
 
-.item-list {
-  display: flex;
-  position: relative; }
-  .item-list:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    border-bottom: 1px solid #eee; }
+.vip-item-condition {
+  font-size: 14px;
+  color: #666; }
 
-.item-list-img {
-  border-radius: 4px;
-  display: inline-block;
-  height: 160px;
-  margin: 38px 24px 0;
-  min-width: 160px;
-  overflow: hidden;
-  width: 160px;
-  text-align: center; }
+.vip-image {
+  text-align: center;
+  border-bottom: 1px solid #ddd; }
 
-.item-information {
-  padding-top: 21px;
-  padding-bottom: 16px;
-  width: 70%; }
+.vip-image,
+.vip-description {
+  padding: 40px; }
 
-.item-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  color: #333;
-  font-weight: 300;
+.vip-description {
+  color: #666;
   font-size: 20px;
-  margin-bottom: 8px; }
-
-.item-fs {
-  font-size: 14px;
   font-weight: 400;
-  line-height: 1.3;
-  color: #00a650;
-  position: static;
-  margin-bottom: 4px;
-  margin-top: 15px;
-  display: inline-block; }
+  line-height: 1.35; }
 
-.item-condition {
-  position: static;
-  display: block;
-  font-size: 14px;
+.vip-description__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 32px;
   line-height: 1;
-  font-weight: 300;
-  margin-top: 0;
-  letter-spacing: .2px;
   color: #333; }
 

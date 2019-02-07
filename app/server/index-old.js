@@ -24,6 +24,84 @@ server.get('/', function (req, res) {
   );
 });
 
+// server.get('/api/items', function (req, res) {
+//     const query = req.query.q;
+//     axios
+//     .get(`https://api.mercadolibre.com/sites/MLA/search`, {
+//         params: {q: query, limit: 4}
+//     })
+
+//     .then(function (response) {  
+//         const items = [];
+//         response.data.results.forEach((item) => {
+            
+//             const currentItem = {
+//                 id: item.id,
+//                 title: item.title,
+//                 price: {
+//                     currency: item.currency_id,
+//                     amount: item.price,
+//                     decimals: 0,
+//                 },
+//                 picture: item.thumbnail,
+//                 condition: item.condition,
+//                 free_shipping: item.shipping.free_shipping                
+//             }
+
+//             items.push(currentItem);
+//         });
+
+//         const listingDto = {
+//             author: { name: "Pablo", lastname: "Montesano"},
+//             items,
+//         };
+
+
+//         res.json(listingDto);
+//       })
+
+//       .catch(function (error) {
+//         // handle error
+//         console.log(error);
+//       })
+// });
+
+// server.get('/api/items/:id', function (req, res) {    
+    
+//     axios
+//     .get(`https://api.mercadolibre.com/items/${req.params.id}`)
+
+//     .then(function (response) {  
+        
+//         const itemDto = {
+//             author: { name: "Pablo", lastname: 'Montesano'},
+//             item: {
+//                 id: response.data.id,
+//                 title: response.data.title,
+//                 price: {
+//                     currency: response.data.currency_id,
+//                     amount: response.data.price,
+//                     decimals: 0,
+//                 },
+//                 picture: response.data.thumbnail,
+//                 condition: response.data.condition,
+//                 shipping: response.data.shipping.free_shipping,
+//                 sold_quantity: response.data.sold_quantity,
+//                 // description: 'descripción'
+//             }
+//         };
+//         res.json(itemDto);
+//       })
+
+//       .catch(function (error) {
+//         // handle error
+//         console.log(error);
+//       })
+      
+//     // res.send(`JSON de listado ItemId: ${req.params.id}`);
+// });
+
+
 server.get('/api/items', (req, res) => {
     getListingItems(req.query.q)
         .then(response => res.json(response))

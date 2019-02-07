@@ -1,4 +1,5 @@
 const React = require('react');
+const SvgSearch = require('./svg-search');
 require('./layout.scss');
 
 class Layout extends React.Component {
@@ -17,7 +18,6 @@ class Layout extends React.Component {
     render() {
         
         return (
-
             <div>                
                 <header className="nav-header">
                     <div className="nav-bounds">                    
@@ -31,13 +31,12 @@ class Layout extends React.Component {
                             <input type="hidden" value={this.state.searchTerm} name="search" />
                             <button className="search-button" type="submit">                                
                                 <i className="search-button-icon">
-                                    <span>Buscar</span>
+                                    <SvgSearch />
                                 </i>
                             </button>
                         </form>
                     </div>
                 </header>
-                
             </div>
         )
 

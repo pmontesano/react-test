@@ -1,11 +1,25 @@
 @font-face {
-  font-family: navigation;
-  src: url(https://http2.mlstatic.com/ui/navigation/4.1.4/navigation.eot);
-  src: url(https://http2.mlstatic.com/ui/navigation/4.1.4/navigation.eot#iefix) format("embedded-opentype"), url(https://http2.mlstatic.com/ui/navigation/4.1.4/navigation.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/navigation/4.1.4/navigation.woff) format("woff"), url(https://http2.mlstatic.com/ui/navigation/4.1.4/navigation.ttf) format("truetype"), url(https://http2.mlstatic.com/ui/navigation/4.1.4/navigation.svg#navigation) format("svg");
-  font-weight: 400;
-  font-style: normal; }
+  font-family: 'Proxima Nova';
+  src: url("/static/proxima-nova-300.woff2");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/static/proxima-nova-400.woff2");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/static/proxima-nova-600.woff2");
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
 
 body {
+  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #333;
   background-color: #eee;
   padding: 0;
   margin: 0;
@@ -82,10 +96,41 @@ body {
       vertical-align: top;
       font-size: 16px;
       line-height: 21px; }
-      .nav-search .search-button .search-button-icon:before {
-        font-family: navigation;
-        content: '\EA27';
-        color: #666; }
       .nav-search .search-button .search-button-icon span {
         display: none; }
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; }
+  .breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 2px;
+    line-height: 1.45; }
+  .breadcrumb-icon {
+    display: inline-block;
+    vertical-align: middle; }
+
+.breadcrumb-title {
+  color: #333;
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 16px 16px 8px 0;
+  position: relative;
+  word-wrap: break-word;
+  z-index: 1; }
+
+.item-price {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.2;
+  vertical-align: middle; }
+
+.item-price_symbol {
+  margin-right: 5px; }
 
