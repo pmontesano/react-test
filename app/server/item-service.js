@@ -18,7 +18,7 @@ const getListingItems = async query => {
             
             const currentItem = {
                 id: item.id,
-                title: item.title,
+                title: item.title,                
                 price: {
                     currency: item.currency_id ? '$' : '',
                     amount: item.price,
@@ -63,8 +63,9 @@ const getItem = async id => {
         item: {
           id: response.data.id,
           title: response.data.title,
+          original_price: response.data.original_price,
           price: {
-            currency: response.data.price.currency_id,
+            currency: response.data.currency_id ? '$' : '',
             amount: Math.trunc(response.data.price),
             decimals: getDecimalsFromPrice(response.data.price)
           },

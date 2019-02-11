@@ -3,6 +3,7 @@ const serialize = require("serialize-javascript");
 const PropTypes = require("prop-types");
 const Script = require("../helpers/script");
 const Layout = require("../commons/layout");
+const SvgChevron = require('./svg-chevron');
 
 require("./search.scss");
 
@@ -22,7 +23,7 @@ const Search = props => {
         <aside className="filters">
           <ul className="breadcrumb">
             {breadcrumb.map(cat => (
-              <li>{cat.name} ></li>
+              <li>{cat.name} <SvgChevron /> </li>
             ))}
           </ul>
           <h2 className="breadcrumb-title">

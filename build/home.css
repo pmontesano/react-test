@@ -1,20 +1,17 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/static/proxima-nova-300.woff2");
+  src: url("https://http2.mlstatic.com/ui/webfonts/v4.0.0/proxima-nova/proxima-nova-300.woff2");
   font-weight: 300; }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/static/proxima-nova-400.woff2");
+  src: url("https://http2.mlstatic.com/ui/webfonts/v4.0.0/proxima-nova/proxima-nova-400.woff2");
   font-weight: 400; }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/static/proxima-nova-600.woff2");
+  src: url("https://http2.mlstatic.com/ui/webfonts/v4.0.0/proxima-nova/proxima-nova-600.woff2");
   font-weight: 600; }
-
-a {
-  text-decoration: none; }
 
 body {
   font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -24,6 +21,9 @@ body {
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
+
+a {
+  text-decoration: none; }
 
 .nav-header {
   background-color: #fff159;
@@ -100,18 +100,17 @@ body {
         display: none; }
 
 .breadcrumb {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center; }
+  margin: 0 0 10px;
+  padding: 0; }
   .breadcrumb li {
     display: inline;
     font-size: 14px;
     font-weight: 400;
     margin: 0 0 2px;
     line-height: 1.45; }
-  .breadcrumb-icon {
-    display: inline-block;
+    .breadcrumb li:last-child .breadcrumb-icon {
+      display: none; }
+  .breadcrumb-icon .ui-icon--chevron-right {
     vertical-align: middle; }
 
 .breadcrumb-title {
